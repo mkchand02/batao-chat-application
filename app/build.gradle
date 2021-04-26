@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.milan.bataochatapplication"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    implementation 'com.google.android.play:core:1.9.1'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.media:media:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    implementation 'com.squareup.okhttp3:okhttp:4.0.0-RC1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //file picker
+    implementation 'com.github.TutorialsAndroid:FilePicker:v4.0.19'
+
+    //image picker
+//    implementation 'xyz.dev_juyoung:cropicker:1.0.3'
+
+    //picasso for image loading
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //expandable card view
+    implementation 'com.alespero:expandable-cardview:0.8'
+
+    //image view for large images
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+
+    //photo view for gallery
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+
+    //To change color of subject type in curriculum
+    implementation 'com.github.devsideal:VectorChildFinder:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'org.apache.commons:commons-collections4:4.3'
+    implementation 'com.squareup.okhttp3:okhttp:4.0.0-RC1'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

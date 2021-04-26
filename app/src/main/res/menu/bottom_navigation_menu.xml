@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/icon_person"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/navigation_chats"
+        android:icon="@drawable/ic_friend_24"
+        android:title="@string/chats" />
+    <item
+        android:id="@+id/navigation_user_list"
+        android:icon="@drawable/ic_user_list_alt_24"
+        android:title="@string/users_list" />
+</menu>
